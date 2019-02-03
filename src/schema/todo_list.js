@@ -1,5 +1,5 @@
 export default function (sequelize, DataTypes) {
-  return sequelize.define('todo_list', {
+  const todo_list = sequelize.define('todo_list', {
     id: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
@@ -17,6 +17,10 @@ export default function (sequelize, DataTypes) {
     }
   }, {
     tableName: 'todo_list'
-  })
+  });
+
+  todo_list.sync();
+
+  return todo_list;
 
 }

@@ -1,7 +1,6 @@
-import {
-  TodoList
-} from '../config/db';
-import TodoList from '../schema/todo_list';
+import TodoListDB from '../config/db';
+const TodoList = TodoListDB.import('../schema/todo_list')
+// import TodoList from '../schema/todo_list';
 
 export default class TodoListModel {
 

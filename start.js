@@ -1,7 +1,8 @@
 'use strict';
 
 require('babel-register')({
-  presets: ['env']
+  presets: ['env'],
+  plugins: ['transform-runtime']
 })
 
 require('./src/index.js')
