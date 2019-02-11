@@ -6,6 +6,8 @@ const router = new Router({
 });
 
 router.get('/todo', TodoListController.getTodoList); //获取todolsit
-router.post('/todo', TodoListController.addTodoList)
+router.post('/todo', TodoListController.addTodoList);
+router.put('/todo/:id', TodoListController.toggleTodo);
+router.delete('/todo/:id', TodoListController.deleteTodo);
 
 export default router;

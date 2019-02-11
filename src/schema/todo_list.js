@@ -19,7 +19,7 @@ export default function (sequelize, DataTypes) {
     tableName: 'todo_list'
   });
 
-  todo_list.sync();
+  // todo_list.sync();
 
   return todo_list;
 
